@@ -2,3 +2,14 @@ Here's an experimental webpage I'm working on.
 Not sure exactly what to do with it yet but it
 has been kinda fun to see what css and html
 are capable of if things are done from scratch.
+
+
+OK, got a basic webpage put together, also got mysql installed and configured on
+nerthvert, there is a database I added called 'db' and a user with priviliges to
+interact with it called 'dbuser' password is 'dbpassword' for now.
+
+Also installed and configured php, and php-mysqli tools.
+Also added a phpscript that prove's that it is possible to connect successfully to
+the database.
+Haven't gotten much further then that. But it's a pretty good start!
+
