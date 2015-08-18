@@ -2,12 +2,77 @@ body {
   background-color: #F6F6F6;
 }
 
-.body {
-  margin-left: 25%;
-  margin-right: 25%;
+.buttonBox{
+  position:relative;
+  margin-left:33%;
+ // margin-top:10%;
+  border: 1px solid #F6F6F6;
+  border-radius:10%;
+  background-color:#561BDF;
+  width:150px;
+  height:50px;
+}
+.buttonBox.right{
+  visible:false;
+  backgroud-color:#F6F6F6;
+  position:fixed;
+  margin-left:80%;
+}
+.buttonBox:hover{
+  background-color:#4215AC;
+  transform:scale(1.1,1.1);
 }
 
-hr {
+.divLine {
+  position: relative;
+  top: 40%;
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 10px;
+}
+
+.centerButtonBack {
+  border-radius: 100%;
+  position: absolute;
+  top: -80px;
+  background-color: #F6F6F6;
+  right: 45%;
+  width: 175px;
+  height: 175px;
+}
+
+.centerButton {
+  border-radius: 100%;
+  onclick="setButtonRed()";
+  position: relative;
+  left: 12px;
+  top: 11px;
+  background-color: #2B2B2B;
+  width: 150px;
+  height: 150px;
+}
+
+.centerButton.red {
+  onclick="setButtonRed()";
+  border-radius: 100%;
+  position: relative;
+  left: 12px;
+  top: 11px;
+  background-color: red;
+  width: 150px;
+  height: 150px;
+}
+
+.centerButtonBack:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.body {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+hr.red {
   margin-left: 10%;
   margin-right: 10%;
   height: 3px;
@@ -46,17 +111,26 @@ p.white {
   font: italic bold 14px Georgia, serif;
 }
 
+p.white.inButton{
+  font: italic bold 25px Georgia, serif;
+  top:-15px;
+  margin-left:20%;
+}
 .obj {
   position: relative;
   top: 20px;
   margin-top: 3%;
   margin-bottom: 3%;
   bottom: inherited;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-color: #E9E581;
   border-radius: 100%;
   border: 1px solid;
+}
+
+.obj:hover{
+  transform:scale(1.1,1.1);
 }
 
 .block.black {
